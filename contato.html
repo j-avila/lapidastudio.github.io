@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contato · Lapida Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Fale com a Lapida Studio e marque um diagnóstico gratuito.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E1116'/%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4'%3E%3Cpath d='M11.5 8 6 13.5 16 25M20.5 8 26 13.5 16 25' stroke='%23fff'/%3E%3Cpath d='M18.2 8.5 13.8 20.5' stroke='%236F86FF'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Lapida Studio, página inicial"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"><path d="M10.5 5.5 3.5 12.5 16 27.5" stroke="#0E1116"/><path d="M21.5 5.5 28.5 12.5 16 27.5" stroke="#0E1116"/><path d="M18.6 6 13.4 21" stroke="#2443D6"/></g></svg><span class="logo-word"><b>Lapida</b> Studio</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="marketing.html">Plano de Marketing</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html" aria-current="page">Contato</a></li></ul>
+      <a class="btn btn-dark btn-sm" href="contato.html">Fale conosco</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span></button>
+  </div>
+</header>
+<main id="conteudo">
+<section class="sec page-hero">
+  <div class="wrap">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="pill pill--plain">Contato</span>
+      <h1>Vamos lapidar a sua ideia?</h1>
+      <p class="hero-sub">Conte o que você precisa. Respondemos em até 1 dia útil para marcar um diagnóstico gratuito de 30 minutos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band">
+  <div class="wrap contact">
+    <div class="card form-card">
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome completo" aria-describedby="err-nome">
+            <span class="field-error" id="err-nome" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nome@empresa.com.br" aria-describedby="err-email">
+            <span class="field-error" id="err-email" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="empresa">Empresa <small>(opcional)</small></label>
+            <input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome do seu negócio">
+          </div>
+          <div class="field">
+            <label for="tipo">Tipo de projeto</label>
+            <select id="tipo" name="tipo" aria-describedby="err-tipo">
+              <option value="">Selecione</option>
+              <option>Site institucional</option>
+              <option>Sistema web sob medida</option>
+              <option>Delivery ou e-commerce</option>
+              <option>UI/UX Design</option>
+              <option>Ainda não sei</option>
+            </select>
+            <span class="field-error" id="err-tipo" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="mensagem">Sobre a sua ideia</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Ex.: tenho uma lanchonete e quero receber pedidos pelo site sem pagar comissão." aria-describedby="err-mensagem"></textarea>
+          <span class="field-error" id="err-mensagem" aria-live="polite"></span>
+        </div>
+        <div class="form-foot">
+          <p>Site acadêmico: o formulário valida os dados, mas não envia mensagens de verdade.</p>
+          <button class="btn btn-dark" type="submit">Enviar mensagem <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </form>
+      <div class="success" id="contact-success" hidden>
+        <span class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span>
+        <h2 tabindex="-1">Obrigado, <span id="success-name"></span>!</h2>
+        <p>Recebemos os dados do seu projeto. Em até 1 dia útil, a Lapida Studio entraria em contato para marcar o diagnóstico.</p>
+        <button class="btn btn-ghost" type="button" id="contact-again">Enviar outra mensagem</button>
+      </div>
+    </div>
+    <aside class="info">
+      <div class="card info-card"><span class="lbl">E-mail</span><b>contato@lapidastudio.com.br</b><span>Respondemos em até 1 dia útil</span></div>
+      <div class="card info-card"><span class="lbl">Redes sociais</span><b>@lapidastudio</b><span>Instagram e LinkedIn</span></div>
+      <div class="card info-card"><span class="lbl">Onde estamos</span><b>Centro, Diamantina – MG</b><span>Atendimento presencial na região e online para todo o Brasil</span></div>
+      <div class="card info-card"><span class="lbl">Horário</span><b>Segunda a sexta, 9h às 18h</b><span>Diagnóstico gratuito de 30 minutos</span></div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"><path d="M10.5 5.5 3.5 12.5 16 27.5" stroke="#0E1116"/><path d="M21.5 5.5 28.5 12.5 16 27.5" stroke="#0E1116"/><path d="M18.6 6 13.4 21" stroke="#2443D6"/></g></svg><span class="logo-word"><b>Lapida</b> Studio</span></a>
+        <p>Lapidamos ideias em produtos digitais. Diamantina – MG.</p>
+      </div>
+      <div class="foot-col"><h4>Páginas</h4><ul>
+        <li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="marketing.html">Plano de Marketing</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html">Contato</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Serviços</h4><ul>
+        <li>Sites institucionais</li><li>Sistemas web sob medida</li><li>Delivery e e-commerce</li><li>UI/UX Design</li>
+      </ul></div>
+      <div class="foot-col"><h4>Contato</h4><ul>
+        <li>contato@lapidastudio.com.br</li><li>@lapidastudio</li><li>Diamantina – MG</li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Lapida Studio · Arthur Dias, Dênio Bruno, José Gabriel, Pedro Monteiro e Renan Azevedo</span>
+      <span>Trabalho acadêmico – Engenharia Web – 2026/2</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

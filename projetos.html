@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projetos · Lapida Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Sistema de Delivery para Hamburgueria: objetivos, requisitos e cronograma.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E1116'/%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.4'%3E%3Cpath d='M11.5 8 6 13.5 16 25M20.5 8 26 13.5 16 25' stroke='%23fff'/%3E%3Cpath d='M18.2 8.5 13.8 20.5' stroke='%236F86FF'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Lapida Studio, página inicial"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"><path d="M10.5 5.5 3.5 12.5 16 27.5" stroke="#0E1116"/><path d="M21.5 5.5 28.5 12.5 16 27.5" stroke="#0E1116"/><path d="M18.6 6 13.4 21" stroke="#2443D6"/></g></svg><span class="logo-word"><b>Lapida</b> Studio</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <ul><li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="marketing.html">Plano de Marketing</a></li><li><a href="projetos.html" aria-current="page">Projetos</a></li><li><a href="contato.html">Contato</a></li></ul>
+      <a class="btn btn-dark btn-sm" href="contato.html">Fale conosco</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span></button>
+  </div>
+</header>
+<main id="conteudo">
+<section class="sec page-hero">
+  <div class="wrap">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="pill pill--plain">Case 01 · Primeiro projeto da Lapida Studio</span>
+      <h1>Sistema de Delivery para Hamburgueria</h1>
+      <p class="hero-sub">Uma aplicação web que centraliza todo o ciclo de vida do pedido, do cardápio digital até a entrega, integrando cliente, atendimento e cozinha.</p>
+      <div class="meta-row">
+        <span>Cliente: <b>hamburgueria local</b></span>
+        <span>Início: <b>outubro de 2026</b></span>
+        <span>Apresentação final: <b>03/12/2026</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="ctx-title">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-head">
+        <span class="eyebrow" style="justify-self:start">Contexto</span>
+        <h2 id="ctx-title">O problema</h2>
+      </div>
+      <div class="prose">
+        <p>Muitas hamburguerias locais ainda recebem pedidos por mensagens informais e anotações manuais. Quando o movimento aumenta, o atendimento trava, a cozinha recebe informações incompletas e ninguém sabe ao certo quanto tempo falta para cada entrega.</p>
+      </div>
+    </div>
+    <div class="pains">
+      <article class="card pain" data-reveal><span class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><h3>Gargalo no atendimento</h3><p>Pedidos chegam por vários canais e precisam ser copiados à mão.</p></article>
+      <article class="card pain" data-reveal><span class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg></span><h3>Falhas com a cozinha</h3><p>Observações se perdem entre o atendente e quem prepara o lanche.</p></article>
+      <article class="card pain" data-reveal><span class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 6v6l4 2"/></svg></span><h3>Prazos sem controle</h3><p>Sem um status claro, o cliente liga para saber onde está o pedido.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band" aria-labelledby="obj-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Objetivos</span>
+      <h2 id="obj-title">Objetivo geral e objetivos específicos</h2>
+      <p>Cada objetivo específico está ligado aos requisitos apresentados em 08/10/2026.</p>
+    </div>
+    <div class="goal" data-reveal>
+      <div class="grid-bg" aria-hidden="true"></div>
+      <span class="eyebrow">Objetivo geral</span>
+      <p>Desenvolver uma aplicação web de delivery para hamburgueria que centralize e automatize todo o ciclo de vida do pedido, da escolha no cardápio digital até a entrega, integrando cliente, atendimento e cozinha em uma única plataforma para reduzir falhas de comunicação, agilizar o atendimento e dar à gerência controle sobre prazos, cardápio e vendas.</p>
+    </div>
+    <h3 style="margin:48px 0 18px;font-size:1.15rem">Objetivos específicos</h3>
+    <ol class="objectives">
+      <li><p>Permitir que o cliente crie sua conta, faça login e gerencie os próprios endereços de entrega.</p><div class="chips"><span class="chip">RF01</span></div></li>
+      <li><p>Disponibilizar um cardápio digital organizado por categorias, sempre atualizado com preços e disponibilidade.</p><div class="chips"><span class="chip">RF02</span></div></li>
+      <li><p>Oferecer um carrinho de compras que permita ajustar quantidades, registrar observações e acompanhar o subtotal.</p><div class="chips"><span class="chip">RF03</span></div></li>
+      <li><p>Automatizar a finalização do pedido com seleção de endereço e forma de pagamento, eliminando o registro manual.</p><div class="chips"><span class="chip">RF04</span></div></li>
+      <li><p>Permitir que o cliente acompanhe o status do pedido em tempo real.</p><div class="chips"><span class="chip">RF05</span></div></li>
+      <li><p>Implementar um painel Kanban que organize os pedidos por status, com atualização assíncrona entre atendimento e cozinha.</p><div class="chips"><span class="chip">RF06</span><span class="chip chip--nf">RNF02</span></div></li>
+      <li><p>Fornecer ao gerente ferramentas para cadastrar, editar e inativar produtos e organizar as categorias do cardápio.</p><div class="chips"><span class="chip">RF07</span><span class="chip">RF08</span></div></li>
+      <li><p>Disponibilizar o histórico de pedidos finalizados e cancelados para apoiar a análise de vendas.</p><div class="chips"><span class="chip">RF09</span></div></li>
+      <li><p>Garantir uma interface mobile-first, com senhas criptografadas e funcionamento estável em hospedagem na nuvem.</p><div class="chips"><span class="chip chip--nf">RNF01</span><span class="chip chip--nf">RNF03</span><span class="chip chip--nf">RNF04</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="actors-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Atores</span>
+      <h2 id="actors-title">Quem usa o sistema</h2>
+      <p>Três perfis de usuário, cada um com um nível de acesso.</p>
+    </div>
+    <div class="actors">
+      <article class="card actor" data-reveal><header><h3>Cliente</h3><span class="access">Básico</span></header><p>Navega pelo cardápio, adiciona itens ao carrinho, faz o cadastro, finaliza pedidos e acompanha o status da entrega.</p></article>
+      <article class="card actor" data-reveal><header><h3>Atendente / Gerente</h3><span class="access">Administrativo</span></header><p>Gerencia o fluxo de pedidos, atualiza o cardápio (preços e disponibilidade) e consulta métricas de vendas.</p></article>
+      <article class="card actor" data-reveal><header><h3>Cozinha</h3><span class="access">Operacional</span></header><p>Visualiza os pedidos confirmados e atualiza o status de preparo.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--band" aria-labelledby="req-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Requisitos</span>
+      <h2 id="req-title">Requisitos funcionais e não funcionais</h2>
+      <p>Levantados com o usuário e validados na apresentação de 08/10/2026.</p>
+    </div>
+    <div class="req-groups">
+      <div class="card req-group" data-reveal>
+        <h3>Visão do cliente</h3>
+        <div class="req"><span class="chip">RF01</span><b>Gestão de conta</b><span>Cadastro, login e gestão de endereços de entrega.</span></div>
+        <div class="req"><span class="chip">RF02</span><b>Catálogo digital</b><span>Produtos disponíveis listados por categoria.</span></div>
+        <div class="req"><span class="chip">RF03</span><b>Carrinho de compras</b><span>Adicionar produtos, alterar quantidades, inserir observações e ver o subtotal.</span></div>
+        <div class="req"><span class="chip">RF04</span><b>Checkout de pedido</b><span>Finalização com seleção do endereço e da forma de pagamento.</span></div>
+        <div class="req"><span class="chip">RF05</span><b>Rastreio de status</b><span>Acompanhamento da mudança de status do pedido em tempo real.</span></div>
+      </div>
+      <div class="card req-group" data-reveal>
+        <h3>Plataforma de gestão</h3>
+        <div class="req"><span class="chip">RF06</span><b>Painel Kanban de pedidos</b><span>Tela dinâmica que organiza os pedidos em colunas conforme o status.</span></div>
+        <div class="req"><span class="chip">RF07</span><b>CRUD de produtos</b><span>Cadastrar, editar e inativar produtos sem estoque.</span></div>
+        <div class="req"><span class="chip">RF08</span><b>Gestão de categorias</b><span>Criação e edição de categorias para organizar o cardápio.</span></div>
+        <div class="req"><span class="chip">RF09</span><b>Histórico de vendas</b><span>Listagem de todos os pedidos finalizados e cancelados.</span></div>
+      </div>
+    </div>
+    <div class="nfr">
+      <div class="card" data-reveal><span class="cat">RNF01 · Usabilidade</span><b>Mobile-first</b><p>Interface do cliente adaptada primeiro para smartphones.</p></div>
+      <div class="card" data-reveal><span class="cat">RNF02 · Desempenho</span><b>Atualização assíncrona</b><p>Mudanças de status no painel da cozinha sem recarregar a página.</p></div>
+      <div class="card" data-reveal><span class="cat">RNF03 · Segurança</span><b>Senhas criptografadas</b><p>Armazenamento seguro das senhas com criptografia.</p></div>
+      <div class="card" data-reveal><span class="cat">RNF04 · Disponibilidade</span><b>Pronto para a nuvem</b><p>Funcionamento estável em serviços de hospedagem em nuvem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="tl-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Cronograma</span>
+      <h2 id="tl-title">Linha do tempo do projeto</h2>
+      <p>As etapas seguem o cronograma da disciplina de Engenharia Web.</p>
+    </div>
+    <ol class="timeline">
+      <li class="tl done" data-start="2026-10-01" data-end="2026-10-01"><span class="tl-date">01/10/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Definição do tema e da equipe</b><span class="status">Concluído</span></div></div></li>
+      <li class="tl done" data-start="2026-10-08" data-end="2026-10-08"><span class="tl-date">08/10/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Apresentação dos requisitos</b><span class="status">Concluído</span><p>Atores, 9 requisitos funcionais e 4 não funcionais.</p></div></div></li>
+      <li class="tl now" data-start="2026-10-09" data-end="2026-10-15"><span class="tl-date">15/10/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Objetivos, plano de marketing e site da empresa</b><span class="status">Em andamento</span><p>Objetivo geral e específicos do sistema, e lançamento da Lapida Studio.</p></div></div></li>
+      <li class="tl" data-start="2026-10-16" data-end="2026-10-22"><span class="tl-date">22/10/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Recursos tecnológicos e protótipo</b><span class="status">Previsto</span><p>Linguagem, banco de dados, ferramentas de apoio e hospedagem.</p></div></div></li>
+      <li class="tl" data-start="2026-10-23" data-end="2026-10-29"><span class="tl-date">29/10/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Plano de testes</b><span class="status">Previsto</span></div></div></li>
+      <li class="tl" data-start="2026-10-30" data-end="2026-11-19"><span class="tl-date">05/11 a 19/11</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Implementação</b><span class="status">Previsto</span><p>Desenvolvimento em três ciclos semanais.</p></div></div></li>
+      <li class="tl" data-start="2026-11-20" data-end="2026-12-03"><span class="tl-date">03/12/2026</span><span class="tl-rail"><span class="tl-dot"></span></span><div class="tl-body"><div class="tl-card"><b>Apresentação do sistema funcionando na web</b><span class="status">Previsto</span></div></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec cta-sec">
+  <div class="wrap">
+    <div class="cta">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <h2>Pronto para lapidar sua ideia?</h2>
+      <p>Seja um site, um sistema ou um canal de vendas próprio, transformamos a sua ideia em um produto digital bem acabado.</p>
+      <a class="btn btn-light" href="contato.html">Comece seu projeto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8"><path d="M10.5 5.5 3.5 12.5 16 27.5" stroke="#0E1116"/><path d="M21.5 5.5 28.5 12.5 16 27.5" stroke="#0E1116"/><path d="M18.6 6 13.4 21" stroke="#2443D6"/></g></svg><span class="logo-word"><b>Lapida</b> Studio</span></a>
+        <p>Lapidamos ideias em produtos digitais. Diamantina – MG.</p>
+      </div>
+      <div class="foot-col"><h4>Páginas</h4><ul>
+        <li><a href="index.html">Início</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="marketing.html">Plano de Marketing</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="contato.html">Contato</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Serviços</h4><ul>
+        <li>Sites institucionais</li><li>Sistemas web sob medida</li><li>Delivery e e-commerce</li><li>UI/UX Design</li>
+      </ul></div>
+      <div class="foot-col"><h4>Contato</h4><ul>
+        <li>contato@lapidastudio.com.br</li><li>@lapidastudio</li><li>Diamantina – MG</li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Lapida Studio · Arthur Dias, Dênio Bruno, José Gabriel, Pedro Monteiro e Renan Azevedo</span>
+      <span>Trabalho acadêmico – Engenharia Web – 2026/2</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
